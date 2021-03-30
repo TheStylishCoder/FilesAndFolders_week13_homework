@@ -1,11 +1,11 @@
 package com.example.codecan.filesAndFolders.components;
 
-import com.example.codecan.filesAndFolders.models.File;
-import com.example.codecan.filesAndFolders.models.Folder;
 import com.example.codecan.filesAndFolders.models.User;
-import com.example.codecan.filesAndFolders.repositories.FileRepository;
-import com.example.codecan.filesAndFolders.repositories.FolderRepository;
+import com.example.codecan.filesAndFolders.models.Folder;
+import com.example.codecan.filesAndFolders.models.File;
 import com.example.codecan.filesAndFolders.repositories.UserRepository;
+import com.example.codecan.filesAndFolders.repositories.FolderRepository;
+import com.example.codecan.filesAndFolders.repositories.FileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -13,16 +13,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DataLoader implements ApplicationRunner {
-
-    @Autowired
-    FileRepository fileRepository;
-
-    @Autowired
-    FolderRepository folderRepository;
-
     @Autowired
     UserRepository userRepository;
-
+    @Autowired
+    FolderRepository folderRepository;
+    @Autowired
+    FileRepository fileRepository;
     public DataLoader() {
     }
     public void run(ApplicationArguments args) {
