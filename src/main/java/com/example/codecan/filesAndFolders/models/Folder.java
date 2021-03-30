@@ -20,7 +20,7 @@ public class Folder {
     @JsonIgnoreProperties({"folder"})
     private List<File> files;
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id")
     @JsonIgnoreProperties({"folders"})
     private User user;
 
@@ -66,4 +66,5 @@ public class Folder {
     public void setFiles(List<File> files) {
         this.files = files;
     }
+
 }

@@ -30,6 +30,7 @@ public class DataLoader implements ApplicationRunner {
         userRepository.save(tom);
         User donna = new User("Donna");
         userRepository.save(donna);
+
         Folder java = new Folder("Java", leslie);
         folderRepository.save(java);
         Folder python = new Folder("Python", ron);
@@ -39,6 +40,8 @@ public class DataLoader implements ApplicationRunner {
         Folder css = new Folder("CSS", donna);
         folderRepository.save(css);
         Folder html = new Folder("HTML", donna);
+        folderRepository.save(html);
+        
         File spring = new File("Spring Intro", ".md", 8, java);
         fileRepository.save(spring);
         File principles = new File("SOLID Principles", ".png", 4, java);
