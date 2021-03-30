@@ -41,7 +41,7 @@ public class DataLoader implements ApplicationRunner {
         folderRepository.save(css);
         Folder html = new Folder("HTML", donna);
         folderRepository.save(html);
-        
+
         File spring = new File("Spring Intro", ".md", 8, java);
         fileRepository.save(spring);
         File principles = new File("SOLID Principles", ".png", 4, java);
