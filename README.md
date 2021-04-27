@@ -24,17 +24,23 @@ You'll need to create controllers for each entity, too, and ensure they implemen
 Create a system to track files and folders:
 
 A File should have:
-a name
-extension (e.g. txt, rb, java, ppt)
-size
-folder
+
+- a name
+- extension (e.g. txt, rb, java, ppt)
+- size
+- folder
+
 A User should have:
-name
-a list of folders
+
+- name
+- a list of folders
+
 A Folder should have:
-a title
-list of files
-a user
+
+- a title
+- list of files
+- a user
+
 Creata a seeding file DataLoader component to pre-seed the database.
 
 Test the routes with Insomnia
